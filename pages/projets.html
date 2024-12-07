@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets | Balsam Hajlaoui</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS Animations -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mes Projets</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html"><i class="bi bi-house-door"></i> Accueil</a></li>
+          <li><a href="parcours.html"><i class="bi bi-person-badge"></i> Parcours</a></li>
+          <li><a href="competences.html"><i class="bi bi-gear"></i> Compétences</a></li>
+          <li><a href="projets.html"><i class="bi bi-briefcase"></i> Projets</a></li>
+          <li><a href="quizz.html"><i class="bi bi-question-circle"></i> Quizz</a></li>
+          <li><a href="temoignage.html"><i class="bi bi-building"></i> IIT</a></li>
+          <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Projets</h2>
+        <div class="project-list" data-aos="fade-right">
+          <!-- Projet 1 -->
+          <div class="project-card">
+            <img src="../images/somm.png" alt="Application de mesure du sommeil" class="project-image">
+            <div class="project-details">
+              <h3>Application de mesure du sommeil</h3>
+              <p><strong>Période :</strong> Février 2022</p>
+              <p>Développement d'une application innovante pour mesurer et analyser la qualité du sommeil.</p>
+              <a href="https://github.com/hajlaouibalsam/ApplicationMobile_GestionSommeil-" class="btn" target="_blank">
+                <i class="bi bi-github"></i> Voir sur GitHub
+              </a>
+              <button class="btn" onclick="openModal('sleep-modal')">Voir plus</button>
+            </div>
+          </div>
+
+          <!-- Galerie modale pour Projet 1 -->
+          <div id="sleep-modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('sleep-modal')">&times;</span>
+              <h3>Application de mesure du sommeil - Galerie</h3>
+              <div class="gallery">
+                <img src="../images/somm.png" alt="Sleep App 1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="project-card">
+            <img src="../images/gly1.png" alt="Application de mesure de la glycémie" class="project-image">
+            <div class="project-details">
+              <h3>Application de mesure de la glycémie</h3>
+              <p><strong>Période :</strong> Décembre 2023</p>
+              <p>Création d'une application permettant de surveiller les niveaux de glycémie en temps réel.</p>
+              <a href="https://github.com/hajlaouibalsam/TP5_APP_MOBILE" class="btn" target="_blank">
+                <i class="bi bi-github"></i> Voir sur GitHub
+              </a>
+              <button class="btn" onclick="openModal('glucose-modal')">Voir plus</button>
+            </div>
+          </div>
+
+          <!-- Galerie modale pour Projet 2 -->
+          <div id="glucose-modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('glucose-modal')">&times;</span>
+              <h3>Application de mesure de la glycémie - Galerie</h3>
+              <div class="gallery">
+                <img src="../images/gly1.png" alt="Glucose App 1">
+                <img src="../images/gly2.png" alt="Glucose App 2">
+                <img src="../images/gly3.png" alt="Glucose App 3">
+              </div>
+            </div>
+          </div>
+          
+<!-- Projet 3 -->
+<div class="project-card">
+  <img src="../images/jeu.png" alt="Jeu Cyber Chase" class="project-image">
+  <div class="project-details">
+    <h3>Jeu Cyber Chase</h3>
+    <p><strong>Période :</strong> Octobre 2023</p>
+    <p>Jeu éducatif où le joueur doit aider un développeur à éviter des hackers.</p>
+    <a href="https://www.youtube.com/watch?v=h_8kBkaRNuU" class="btn" target="_blank">
+      <i class="bi bi-youtube"></i> Voir sur YouTube
+    </a>
+    <button class="btn" onclick="openModal('cyberchase-modal')">Voir plus</button>
+  </div>
+</div>
+
+<!-- Galerie modale pour Projet 3 -->
+<div id="cyberchase-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('cyberchase-modal')">&times;</span>
+    <h3>Jeu Cyber Chase - Galerie</h3>
+    <div class="gallery">
+      <img src="../images/jeu.png" alt="Cyber Chase 1">
+      <img src="../images/jeu2.png" alt="Cyber Chase 2">
+    </div>
+  </div>
+</div>
+
+<!-- Projet 4 -->
+<div class="project-card">
+  <img src="../images/marketplace.png" alt="Marketplace multi-vendeurs" class="project-image">
+  <div class="project-details">
+    <h3>Marketplace Multi-Vendeurs</h3>
+    <p><strong>Période :</strong> Février 2024 - Juin 2024</p>
+    <p>Création d'une plateforme e-commerce permettant à plusieurs vendeurs de gérer leurs boutiques.</p>
+    <button class="btn" onclick="openModal('marketplace-modal')">Voir plus</button>
+  </div>
+</div>
+
+<!-- Galerie modale pour Projet 4 -->
+<div id="marketplace-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('marketplace-modal')">&times;</span>
+    <h3>Marketplace Multi-Vendeurs - Galerie</h3>
+    <div class="gallery">
+      <img src="../images//pfe.png" alt="Marketplace 1">
+      <img src="../images/pfe3.png" alt="Marketplace 2">
+      <img src="../images/marketplace.png" alt="Marketplace 3">
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Balsam Hajlaoui | Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</body>
+</html>

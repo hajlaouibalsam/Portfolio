@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Développement Web</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="../script.js"></script>
+  
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Quiz : Développement Web</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html"><i class="bi bi-house-door"></i> Accueil</a></li>
+          <li><a href="parcours.html"><i class="bi bi-person-badge"></i> Parcours</a></li>
+          <li><a href="competences.html"><i class="bi bi-gear"></i> Compétences</a></li>
+          <li><a href="projets.html"><i class="bi bi-briefcase"></i> Projets</a></li>
+          <li><a href="quizz.html"><i class="bi bi-question-circle"></i> Quiz</a></li>
+          <li><a href="temoignage.html"><i class="bi bi-building"></i> IIT</a></li>
+          <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section_quiz">
+      <h2>Testez vos connaissances en développement web</h2>
+      <form id="quiz-form">
+        <div class="quiz-container">
+          <!-- Question 1 -->
+          <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <label for="q1">1. Quel langage est utilisé pour structurer une page web ?</label>
+            <div class="answers">
+              <label><input type="radio" name="q1" value="1" required> HTML</label>
+              <label><input type="radio" name="q1" value="0"> CSS</label>
+              <label><input type="radio" name="q1" value="0"> JavaScript</label>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <label for="q2">2. Quelle technologie est utilisée pour les interfaces dynamiques ?</label>
+            <div class="answers">
+              <label><input type="radio" name="q2" value="1" required> React</label>
+              <label><input type="radio" name="q2" value="0"> Angular</label>
+              <label><input type="radio" name="q2" value="0"> Vue.js</label>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <label for="q3">3. Quel langage est souvent utilisé pour l'intelligence artificielle ?</label>
+            <div class="answers">
+              <label><input type="radio" name="q3" value="1" required> Python</label>
+              <label><input type="radio" name="q3" value="0"> C++</label>
+              <label><input type="radio" name="q3" value="0"> Ruby</label>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <label for="q4">4. Quel outil est utilisé pour gérer les bases de données relationnelles ?</label>
+            <div class="answers">
+              <label><input type="radio" name="q4" value="1" required> MySQL</label>
+              <label><input type="radio" name="q4" value="0"> MongoDB</label>
+              <label><input type="radio" name="q4" value="0"> PostgreSQL</label>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+            <label for="q5">5. Quel outil est utilisé pour containeriser des applications ?</label>
+            <div class="answers">
+              <label><input type="radio" name="q5" value="1" required> Docker</label>
+              <label><input type="radio" name="q5" value="0"> Kubernetes</label>
+              <label><input type="radio" name="q5" value="0"> VMware</label>
+            </div>
+          </div>
+
+          <!-- Continue with other questions... -->
+
+        </div>
+        <button type="button" class="btn btn-color-2" onclick="calculateScore()" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">Voir le score</button>
+      </form>
+      
+      <div id="score"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Balsam Hajlaoui | Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
